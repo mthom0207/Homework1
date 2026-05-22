@@ -1,0 +1,51 @@
+---
+title: "Meaningful Insights From Data"
+format: html
+---
+
+## Answers To Different Questions About Data Scientists
+
+#### What being a data scientist is about:
+
+Data Scientists is having the vast background but taking a unique perspective on different aspects. The three main tracks that de scribes data science are and encompasses what being a data scientist is all about is:
+
+-   Engineering - the process of making everything else possible. Before any analysis or modeling can take place, the data must be collected, stored, and structured properly. This involves building data infrastructures and pipelines. Data engineering creates the foundational infrastructure that allows data to flow seamlessly and reliably, turning raw data into an accessible and usable asset.
+
+-   Analysis - the process of getting insights through exploratory analysis. Before any insights can be made, raw data must be analyzed in a exploratory approach. This focuses on exploratory data analysis and data visualization. Asking questions of the data, identifying immediate trends, and creating dashboards or charts to tell a story. A data scientist uncovers what is happening within the dataset translating the data into insights that stakeholders can understand to make decisions.
+
+-   Modeling/Inference - the process of diving deeper into the data to discover the pattern we don't easily see. Prediction focuses on predicting based on what has happened and understanding each variable's role. Model data to make predictions and find patterns within the data that are not immediately found on first look.
+
+#### What differences/similarities do you see between data scientists and statisticians?
+
+-   Differences that I see between data scientists and statisticians are data scientists interact with big unstructured raw datasets where they have to use the Engineering Track to complete analysis into a generalized research question. They create an analysis to research based on the dataset provided. Where as statisticians more often work with smaller clean and sampled datasets that are structured and designed to answer a specific research question. Statisticians will take the small sampled data to answer a predetermined research question.
+
+-   Data Scientists focus on predictive accuracy whereas statisticians focus on inference.
+
+-   Both data scientists and statisticians are focused on turning data into knowledge. Both care about identifying patterns and using evidence to answer questions and make decisions. Both rely on creating meaningful insights.
+
+#### How do you view yourself in relation to these two areas?
+
+I find myself in the data scientist category compared to the statistician. I enjoy the data engineering aspect on getting the raw uncleaned data and creating meaningful insights from this. I like to create the analysis based on the data and not from previously developed research question.
+
+## R Code Analysis
+
+Define and object `y` which is the density of Petal.Width in the iris dataset
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+Determine the class, type, and structure of the object, `y`.
+
+```{r}
+class(y)
+typeof(y)
+str(y)
+```
+
+Plot the function `y`
+
+```{r}
+#| echo: false
+plot(y, main = "Density of Petal Width from Iris Dataset", xlab = "Petal Width")
+```
